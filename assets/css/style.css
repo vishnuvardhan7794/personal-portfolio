@@ -169,6 +169,36 @@ body {
 .btn-primary.blue { background-color: var(--klein-blue); }
 
 .btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section { padding-block:  var(--section-padding);}
+.section-subtitle {
+  color:  var(--orange-soda);
+  font-family: var(--ff-barlow);
+  font-size: var(--fs-4);
+  text-align: center;
+}
+.h2,
+.h3{
+ color: var(--white);
+ font-family: var(--ff-barlow);
+ font-weight: var(--fw-600);
+ line-height: 1.3;
+}
+.h2{
+  font-size: var(--fs-2);
+}
+.h3{
+  font-size: var(--fs-3);
+}
+.section-title,
+.section-text {
+  text-align: center;
+}
+
 /* .container { padding-inline: 20px; }
 
 
@@ -225,7 +255,7 @@ body {
     background-color: var(--space-cadet);
     height: 65px;
     box-shadow: var(--shadow);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     transition: 0.25s var(--cubic-out);
     z-index: 4;
 }
@@ -299,4 +329,69 @@ body {
   height:  172px;
   background-color:  var(--independence);
   border-radius:  var(--radius-10);
+}
+
+.hero-banner img {
+  border-radius: inherit;
+}
+.hero-content {
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-title {
+  font-family: var(--ff-barlow);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  line-height: 1.3;
+  margin-block-end: 14px;
+}
+
+.hero-title strong {
+  font-size: var(--fs-1);
+  font-weight: inherit;
+  margin-block-end: 8px;
+}
+
+.hero-text { margin-block-end: 25px;}
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:10px
+}
+
+/*--------------------------------*\
+  #ABOUT
+/*--------------------------------*/
+.abs-img,
+.abs-icon {display: none;}
+.about {padding-block-start: 120px;}
+.about-banner{
+  background-color: var(--independence);
+  border-radius: var(--radius-10);
+  margin-block-end: 30px;
+}
+.about-banner > .img-cover { border-radius: inherit;}
+
+.about :is(.section-title, .section-subtitle, .section-text) { text-align: left;}
+.about :is(.section-title, .section-text) { margin-block-end: 30px;}
+
+/*------------------*\
+  #PORTFOLIO
+/*------------------*/
+.portfolio .section-title { margin-block-end: 18px;}
+.portfolio .section-text { margin-block-end:  80px;}
+
+.portfolio-list {
+  display: grid;
+  gap: 60px;
+}
+.portfolio-card {
+  background-color: var(--independence);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
 }
