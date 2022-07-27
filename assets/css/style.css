@@ -394,4 +394,84 @@ body {
   background-size: cover;
   background-position: center;
   padding: 120px 20px;
+  border-radius:  var(--radius-20);
+  font-family: var(--ff-barlow);
+  color: var(--white);
+  font-weight:  var(--fw-600);
+  transition:  var(--transition-2);
 }
+
+.portfolio-card .card-title {
+  max-width: 20ch;
+}
+
+.portfolio-list > li:nth-child(even) .card-content { 
+  margin-inline-start: auto;
+}
+
+.portfolio-card .card-subtitle {
+  color:  var(--orange-soda);
+  margin-block-end: 5px;
+}
+
+.portfolio-card .card-title {
+  max-width:20ch;
+  margin-block-end: 20px;
+}
+
+.portfolio-card .btn-link {
+  display: flex;
+  align-items: center;
+  gap:5px;
+  font-size: var(--fs-6);
+  text-transform:  uppercase;
+}
+
+.portfolio-card .btn-link ion-icon {
+  color:  var(--orange-soda);
+  font-size: 1.6rem;
+}
+
+/*-------------------------*\
+  #SKILLS
+\*-------------------------*/
+.skills .section-title {
+  margin-block-end: 20px;
+}
+
+.skills .section-text {
+  margin-block-end: 70px;
+}
+
+.skill-list {
+  display: grid;
+  gap:25px;
+}
+.skills-item .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills-title,
+.skills-data {
+  color: var(--white);
+  font-size: var(--fs-5);
+  font-family: var(--ff-barlow);
+  font-weight: var(--fw-600);
+}
+
+.skill-progress-box {
+  background-color: var(--white);
+  height: 8px;
+  border-radius: var(--radius-10);
+}
+
+.skill-progress {
+  background-color: var(--orange-soda);
+  width: 50%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+
+
